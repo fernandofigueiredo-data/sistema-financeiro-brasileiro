@@ -1,0 +1,9 @@
+tcb,descricao,qtd,qtd_zero_agencias,min_agencias,agencias,postos
+b1,"Banco Comercial, Banco Múltiplo com Carteira Comercial ou Caixa Econômica",116,0,1,13386,8067
+b2,Banco Múltiplo sem Carteira Comercial ou Banco de Investimento ou Banco de Câmbio,50,0,1,108,7
+b3C,Central e Confederação de Cooperativas de Crédito,27,27,0,0,11
+b3S,Cooperativa de Crédito Singular,729,729,0,0,9928
+b4,Banco de Desenvolvimento,4,0,2,13,0
+n1,Não Bancário de Crédito,290,0,1,656,0
+n2,Não Bancário de Mercado de Capitais,210,0,1,563,10
+n4,Instituições de Pagamento,196,0,1,196,0

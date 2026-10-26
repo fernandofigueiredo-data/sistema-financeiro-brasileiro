@@ -1,0 +1,1 @@
+INSERT INTO public.tipos_controle (tc, descricao) VALUES (1, 'Público'), (2, 'Privado Nacional'), (3, 'Privado com Controle Estrangeiro');

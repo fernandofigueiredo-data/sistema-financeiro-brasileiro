@@ -1,0 +1,66 @@
+// ============================================================
+// MEDIDAS DAX | Dashboard IFData Junho 2026
+// Tabela: ifdata  (ver Power_Query_IFData.m)
+// Valores monetários da fonte em R$ mil
+// Crie todas em uma tabela vazia "_Medidas" (Inserir dados > Tabela vazia)
+// ============================================================
+
+// ---------- 1. BASE ----------
+Ativo Total = SUM ( ifdata[ativo_total] )
+
+Carteira de Crédito = SUM ( ifdata[carteira_credito] )
+
+Patrimônio Líquido = SUM ( ifdata[patrimonio_liquido] )
+
+Lucro Líquido = SUM ( ifdata[lucro_liquido] )
+
+Qtd Instituições = COUNTROWS ( ifdata )
+
+// ---------- 2. EXIBIÇÃO (R$ mil -> bi / tri) ----------
+Ativo Total (R$ tri) = DIVIDE ( [Ativo Total], 1000000000 )
+
+Ativo Total (R$ bi) = DIVIDE ( [Ativo Total], 1000000 )
+
+// ---------- 3. RENTABILIDADE ----------
+ROE Agregado = DIVIDE ( [Lucro Líquido], [Patrimônio Líquido] )
+
+ROE Médio Simples =
+AVERAGEX (
+    FILTER ( ifdata, ifdata[patrimonio_liquido] > 0 ),
+    DIVIDE ( ifdata[lucro_liquido], ifdata[patrimonio_liquido] )
+)
+
+// ---------- 4. CRÉDITO ----------
+Índice Crédito/Ativo = DIVIDE ( [Carteira de Crédito], [Ativo Total] )
+
+// ---------- 5. AGÊNCIAS ----------
+Qtd sem Agência =
+CALCULATE ( [Qtd Instituições], ifdata[num_agencias] = 0 )
+
+// Alternativa recomendada para o termo "digitais" (ver guia, alerta 2)
+Qtd Digitais (não bancárias e IPs, até 1 agência) =
+CALCULATE (
+    [Qtd Instituições],
+    ifdata[tcb] IN { "n1", "n2", "n4" },
+    ifdata[num_agencias] <= 1
+)
+
+// ---------- 6. PARTICIPAÇÃO E RANKING ----------
+Ativo % do Total =
+DIVIDE (
+    [Ativo Total],
+    CALCULATE ( [Ativo Total], ALLSELECTED ( ifdata[tipo_controle] ) )
+)
+
+Rank Ativo =
+RANKX ( ALLSELECTED ( ifdata[instituicao] ), [Ativo Total], , DESC, DENSE )
+
+Cor Barra Top 10 =
+IF ( [Rank Ativo] = 1, "#1F3A6E", "#9FB1CF" )
+
+// ---------- 7. OPCIONAL: CONCENTRAÇÃO ----------
+Concentração Top 5 =
+DIVIDE (
+    SUMX ( TOPN ( 5, ALLSELECTED ( ifdata ), ifdata[ativo_total], DESC ), ifdata[ativo_total] ),
+    CALCULATE ( [Ativo Total], ALLSELECTED ( ifdata ) )
+)

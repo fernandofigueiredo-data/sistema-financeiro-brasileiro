@@ -1,0 +1,62 @@
+# ─── Dados sensíveis ─────────────────────────────────────────────
+.env
+*.env
+credenciais.txt
+senha*.txt
+config_local.*
+
+# Configurações de conexão de banco (podem guardar senha)
+.dbeaver/
+dbeaver/
+credentials-config.json
+data-sources*.json
+
+# ─── Dados brutos (referencie a fonte no README) ─────────────────
+# Descomente se os arquivos forem grandes (>50 MB)
+# *.csv
+# *.xlsx
+
+# Sempre ignore dados com PII (informações pessoais identificáveis)
+*_pii.*
+*_cpf.*
+*_dados_pessoais.*
+
+# ─── Python ──────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+env/
+.env/
+
+# ─── Jupyter ─────────────────────────────────────────────────────
+.ipynb_checkpoints
+
+# ─── VS Code ─────────────────────────────────────────────────────
+.vscode/
+*.code-workspace
+
+# ─── Sistema operacional ─────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ─── Arquivos temporários ─────────────────────────────────────────
+*.tmp
+*.temp
+*.log
+*.bak
+~$*
+
+# ─── Power BI ────────────────────────────────────────────────────
+# Descomente se o .pbix for maior que 50 MB
+# *.pbix

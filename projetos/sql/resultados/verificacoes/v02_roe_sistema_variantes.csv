@@ -1,0 +1,6 @@
+metodo,n,roe_semestre_pct
+agregado_todos_com_dados (= q1),1571,7.52
+agregado_so_pl_positivo,1565,7.52
+media_simples_pl_positivo,1565,0.84
+mediana_pl_positivo,1565,4.35
+agregado_todos_anualizado_composto ((1+r)^2-1),1571,15.61
