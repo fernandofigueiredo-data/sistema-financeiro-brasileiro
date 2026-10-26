@@ -1,3 +1,5 @@
+![Sistema Financeiro Brasileiro: análise de dados com o IF.data](assets/banner.png)
+
 # Análise de Dados completa do Sistema Financeiro Brasileiro - Portfólio
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fernandofigueiredoalves/)
