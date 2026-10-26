@@ -23,7 +23,7 @@ em Jupyter Notebook. Inclui também um estudo de **estatística inferencial**
 - Correlação ativo/agências: **0,91** — os maiores ativos estão nas instituições com grande rede física, mas correlação não indica causa
 - Segmento com maior ROE do semestre: **n2** (não bancário de mercado de capitais), com ROE agregado de **9,8%**; pela média simples, lidera **b3C** (centrais de cooperativas), com **4,0%**
 - Pelo ROE agregado, o controle privado nacional é o mais rentável (**8,5%**); pela média simples, o público lidera (**8,0%**) — muitas instituições pequenas com prejuízo puxam a média simples para baixo
-- Sem agência física: **737** instituições (**46,9%** das que têm dados) e **6,4%** do ativo — são todas cooperativas, não bancos digitais
+- Sem agência física: **756** instituições na base, todas cooperativas, não bancos digitais. Dessas, **737** têm dados contábeis (**46,9%** das instituições com dados) e somam **6,4%** do ativo; as outras 19 não informaram valores e ficam fora dos cálculos
 
 ## Arquivos
 

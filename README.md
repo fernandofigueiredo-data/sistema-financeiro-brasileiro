@@ -49,7 +49,7 @@ O relatório de Junho de 2026 do IF.data - Banco Central do Brasil me obrigou a 
 ### 🐍 Análise Python — IF.data Banco Central com Pandas e Seaborn
 **Ferramentas:** Python, Pandas, Matplotlib, Seaborn, SciPy  
 **Dados:** IF.data — Junho/2026  
-**Resultado principal:** o ativo médio é 42,3 vezes o mediano; as 737 instituições sem agência são cooperativas, não bancos digitais. Inclui estudo de estatística inferencial (IC, teste t de Welch, bootstrap)  
+**Resultado principal:** o ativo médio é 42,3 vezes o mediano; as 756 instituições sem agência são cooperativas, não bancos digitais (737 delas têm dados contábeis e entram nos cálculos). Inclui estudo de estatística inferencial (IC, teste t de Welch, bootstrap)  
 📁 [Ver projeto](projetos/python/)
 
 ---
