@@ -1,4 +1,4 @@
-# Portfólio de Análise de Dados — Fernando Figueiredo
+# Análise de Dados completa do Sistema Financeiro Brasileiro - Portfólio
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fernandofigueiredoalves/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:fernandofigueiredo123@gmail.com)
@@ -14,7 +14,7 @@
 
 Trabalhei mais de dez anos com Comunicação e Storytelling antes de ir para a área de dados. Nesse tempo vi muito número bom ser ignorado porque ninguém conseguia dizer o que ele significava. Hoje, utilizando as técnicas em análise de dados, a parte de que mais gosto continua sendo pensar em como comunicar (e mostrar) os números para que virem decisões de negócio.
 
-O IF.data me obrigou a fazer os números baterem de uma ferramenta para outra, e foi nas conferências que apareceram as descobertas de que mais gosto. As 756 instituições “sem agência” não são bancos digitais, são cooperativas que registram zero agências. E a média simples do ROE (0,8% no semestre) conta uma história bem diferente da do sistema como um todo (7,5%).
+O relatório de Junho de 2026 do IF.data - Banco Central do Brasil me obrigou a fazer os números baterem de uma ferramenta para outra, e foi nas conferências que apareceram as descobertas de que mais gosto. As 756 instituições “sem agência” não são bancos digitais, são cooperativas que registram zero agências. E a média simples do ROE (0,8% no semestre) conta uma história bem diferente da do sistema como um todo (7,5%).
 
 ---
 
@@ -28,7 +28,7 @@ O IF.data me obrigou a fazer os números baterem de uma ferramenta para outra, e
 
 ---
 
-### 🗄️ Consultas SQL — Sistema Financeiro Brasileiro
+### 🗄️ Consultas SQL — IF.data Banco Central
 **Ferramentas:** PostgreSQL, DBeaver, Supabase  
 **Dados:** IF.data estruturado em 3 tabelas relacionais + tabelas de domínio  
 **Resultado principal:** as 5 maiores instituições detêm 52,1% do ativo (58,0% agregando por conglomerado prudencial)  
@@ -36,7 +36,7 @@ O IF.data me obrigou a fazer os números baterem de uma ferramenta para outra, e
 
 ---
 
-### 📈 Dashboard Power BI — IF.data
+### 📈 Dashboard Power BI — IF.data Banco Central
 **Ferramentas:** Power BI Desktop, DAX, Power Query  
 **Dados:** IF.data — Junho/2026  
 **Resultado principal:** R$ 19,5 tri em ativos; a média simples do ROE (0,8%) esconde um ROE agregado de 7,52% no semestre  
@@ -44,7 +44,7 @@ O IF.data me obrigou a fazer os números baterem de uma ferramenta para outra, e
 
 ---
 
-### 🐍 Análise Python — Sistema Financeiro com Pandas e Seaborn
+### 🐍 Análise Python — IF.data Banco Central com Pandas e Seaborn
 **Ferramentas:** Python, Pandas, Matplotlib, Seaborn, SciPy  
 **Dados:** IF.data — Junho/2026  
 **Resultado principal:** o ativo médio é 42,3 vezes o mediano; as 737 instituições sem agência são cooperativas, não bancos digitais. Inclui estudo de estatística inferencial (IC, teste t de Welch, bootstrap)  
