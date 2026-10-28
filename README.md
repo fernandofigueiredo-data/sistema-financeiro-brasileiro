@@ -25,7 +25,7 @@ O relatório de Junho de 2026 do IF.data - Banco Central do Brasil me obrigou a 
 ### 📊 Análise Exploratória com Excel — IF.data Banco Central
 **Ferramentas:** Excel (fórmulas condicionais, PROCV, ÍNDICE/CORRESP, gráficos)  
 **Dados:** IF.data — Junho/2026 — 1.622 instituições financeiras  
-**Resultado principal:** o TCB b1 (bancos comerciais e múltiplos) reúne 7,2% das instituições e 73,3% do ativo do sistema  
+**Resultado principal:** o TCB b1 (bancos comerciais, múltiplos com carteira comercial e Caixa) reúne 7,2% das instituições e 73,3% do ativo do sistema  
 📁 [Ver projeto](projetos/excel/)
 
 ---
